@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .btn {
+        margin-top: 10px;
+        position: relative;
+      }
+      .btn1 {
+        margin-left: 86%;
+        position: absolute;
+        margin-top: 20px;
+      }
+      .btn2 {
+        margin-top: 312px;
+
+        position: absolute;
+        margin-left: 86%;
+      }
+      .btn3 {
+        margin-top: 323px;
+        position: absolute;
+      }
+      #a {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        position: absolute;
+      }
+      @keyframes abc {
+        0% {
+          background: red;
+          margin-left: 0%;
+        }
+        100% {
+          margin-left: 90%;
+          background: blue;
+        }
+      }
+
+      @keyframes ab {
+        0% {
+          margin-top: 0%;
+          margin-left: 90%;
+        }
+        100% {
+          margin-top: 20%;
+          margin-left: 90%;
+        }
+      }
+
+      @keyframes bb {
+        0% {
+          margin-left: 90%;
+          margin-top: 20%;
+        }
+        100% {
+          margin-left: 0%;
+          margin-top: 20%;
+        }
+      }
+
+      @keyframes qw {
+        0% {
+          margin-top: 20%;
+          margin-left: 0%;
+        }
+        100% {
+          margin-top: 0%;
+          margin-left: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="a"></div>
+    <button class="btn" onclick="fun()">click</button>
+
+    <button class="btn1" onclick="fun1()">click</button>
+
+    <button class="btn2" onclick="fun2()">click</button>
+
+    <button class="btn3" onclick="fun3()">click</button>
+
+    <script>
+      function fun() {
+        var q = document.getElementById('a');
+        q.style.animation = 'abc 2s linear 1 forwards';
+      }
+      function fun1() {
+        var g = document.getElementById('a');
+        g.style.animation = 'ab 2s linear 1 forwards';
+      }
+      function fun2() {
+        var n = document.getElementById('a');
+        n.style.animation = 'bb 2s linear 1 forwards';
+      }
+
+      function fun3() {
+        var h = document.getElementById('a');
+        h.style.animation = 'qw 2s linear 1 forwards';
+      }
+    </script>
+  </body>
+</html>
